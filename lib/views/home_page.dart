@@ -22,13 +22,16 @@ class HomePage extends StatelessWidget {
         height: double.maxFinite,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                buildCard('החתונה', 'assets/images/WeddingPhotoBack6.jpg'),
-              ],
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              padding: EdgeInsets.all(16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  buildCard('החתונה', 'assets/images/WeddingPhotoBack6.jpg'),
+                ],
+              ),
             ),
           ],
         ),
