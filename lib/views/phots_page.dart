@@ -1,7 +1,17 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:wedding_final_mvc/ui/colors_constants.dart';
-import 'package:wedding_final_mvc/views/photos_page_gal.dart';
+import 'package:wedding_final_mvc/views/home_page.dart';
+import 'package:wedding_final_mvc/views/photo_page_last_seen.dart';
+import 'package:wedding_final_mvc/views/photos_page_hachatuna.dart';
+import 'package:wedding_final_mvc/views/photos_page_halla.dart';
+import 'package:wedding_final_mvc/views/photos_page_magnetim.dart';
+import 'package:wedding_final_mvc/views/photos_page_marom_bach1.dart';
+import 'package:wedding_final_mvc/views/photos_page_marom_bach2.dart';
+import 'package:wedding_final_mvc/views/photos_page_meital_bach.dart';
+import 'package:wedding_final_mvc/views/photos_page_purposal.dart';
 
 class PhotosPage extends StatelessWidget {
   const PhotosPage({super.key});
@@ -53,7 +63,9 @@ class PhotosPage extends StatelessWidget {
                     containedInkWell: true,
                     highlightShape: BoxShape.rectangle,
                     onTap: () {
-                      Get.to(PhotoGallery());
+                      Get.to(PhotoGallery(
+                        title: 'החתונה',
+                      ));
                     },
                     //Adding image & text
                     child: Column(
@@ -111,13 +123,9 @@ class PhotosPage extends StatelessWidget {
                     containedInkWell: true,
                     highlightShape: BoxShape.rectangle,
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) =>
-                      //         PhotoGallery2(title: 'החתונה - מגנטים'),
-                      //   ),
-                      // );
+                      Get.to(PhotoGallery2(
+                        title: 'החתונה מגנטים',
+                      ));
                     },
                     //Adding image & text
                     child: Column(
@@ -175,13 +183,9 @@ class PhotosPage extends StatelessWidget {
                     containedInkWell: true,
                     highlightShape: BoxShape.rectangle,
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) =>
-                      //         PhotoGallery3(title: 'הצעת נישואין'),
-                      //   ),
-                      // );
+                      Get.to(PhotoGallery3(
+                        title: 'הצעת נישואין',
+                      ));
                     },
                     //Adding image & text
                     child: Column(
@@ -239,13 +243,7 @@ class PhotosPage extends StatelessWidget {
                     containedInkWell: true,
                     highlightShape: BoxShape.rectangle,
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) =>
-                      //         PhotoGallery4(title: 'הפרשת חלה'),
-                      //   ),
-                      // );
+                      Get.to(PhotoGallery4(title: 'הפרשת חלה'));
                     },
                     //Adding image & text
                     child: Column(
@@ -303,13 +301,7 @@ class PhotosPage extends StatelessWidget {
                     containedInkWell: true,
                     highlightShape: BoxShape.rectangle,
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) =>
-                      //         PhotoGallery5(title: 'מסיבת רווקת מיטל'),
-                      //   ),
-                      // );
+                      Get.to(PhotoGallery5(title: 'מסיבת רווקות מיטל'));
                     },
                     //Adding image & text
                     child: Column(
@@ -367,13 +359,7 @@ class PhotosPage extends StatelessWidget {
                     containedInkWell: true,
                     highlightShape: BoxShape.rectangle,
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) =>
-                      //         PhotoGallery6(title: 'מרום רווקים אילת'),
-                      //   ),
-                      // );
+                      Get.to(PhotoGallery6(title: 'מרום רווקים אילת'));
                     },
                     //Adding image & text
                     child: Column(
@@ -431,13 +417,7 @@ class PhotosPage extends StatelessWidget {
                     containedInkWell: true,
                     highlightShape: BoxShape.rectangle,
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) =>
-                      //         PhotoGallery7(title: 'מרום רווקים סיני'),
-                      //   ),
-                      // );
+                      Get.to(PhotoGallery7(title: 'מרום רווקים סיני'));
                     },
                     //Adding image & text
                     child: Column(
@@ -495,13 +475,7 @@ class PhotosPage extends StatelessWidget {
                     containedInkWell: true,
                     highlightShape: BoxShape.rectangle,
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) =>
-                      //         PhotoGallery8(title: 'Last seen'),
-                      //   ),
-                      // );
+                      Get.to(PhotoGallery8(title: 'Last Seen'));
                     },
                     //Adding image & text
                     child: Column(
@@ -533,7 +507,7 @@ class PhotosPage extends StatelessWidget {
               alignment: Alignment.bottomLeft,
               child: ElevatedButton.icon(
                 onPressed: () {
-                  Navigator.pop(context);
+                  Get.to(HomePage());
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: CcolorConstants.buttons_Color),
