@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:wedding_final_mvc/ui/colors_constants.dart';
+import 'package:wedding_final_mvc/Constants/colors_constants.dart';
 import 'package:wedding_final_mvc/views/home_page.dart';
 import 'package:wedding_final_mvc/views/photo_page_last_seen.dart';
 import 'package:wedding_final_mvc/views/photos_page_hachatuna.dart';

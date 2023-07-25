@@ -2,8 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:wedding_final_mvc/ui/colors_constants.dart';
+import 'package:wedding_final_mvc/Constants/colors_constants.dart';
 import 'package:wedding_final_mvc/views/phots_page.dart';
+import 'package:wedding_final_mvc/views/video_page.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({super.key});
@@ -38,17 +39,12 @@ class SideMenu extends StatelessWidget {
               leading: const Icon(Icons.photo),
               title:
                   const Text('תמונות', style: TextStyle(color: Colors.white)),
-              onTap: () => {
-                Get.to(PhotosPage())
-              },
+              onTap: () => {Get.to(PhotosPage())},
             ),
             ListTile(
               leading: const Icon(Icons.video_camera_back),
               title: const Text('וידאו', style: TextStyle(color: Colors.white)),
-              onTap: () => {
-                // Navigator.push(context,
-                // MaterialPageRoute(builder: (context) => const VideosPage()))
-              },
+              onTap: () => {Get.to(VideosPage())},
             ),
             ListTile(
               leading: const Icon(Icons.edit_document),

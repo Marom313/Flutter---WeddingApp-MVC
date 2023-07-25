@@ -1,7 +1,13 @@
+/*
+Weddina App 2023
+Made by: Marom Gigi
+application that helps arange, store and view all the wedding files.
+*/
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:wedding_final_mvc/views/home_page.dart';
-import 'package:wedding_final_mvc/ui/colors_constants.dart';
+import 'package:wedding_final_mvc/Constants/colors_constants.dart';
 // import 'package:wedding_final_mvc/ui/colors_constants.dart';
 
 void main() {

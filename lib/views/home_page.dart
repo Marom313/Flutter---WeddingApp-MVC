@@ -1,6 +1,8 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 // import 'package:get/get_navigation/src/routes/default_transitions.dart';
-import 'package:wedding_final_mvc/ui/colors_constants.dart';
+import 'package:wedding_final_mvc/Constants/colors_constants.dart';
 import 'package:wedding_final_mvc/widgets/button_with_image.dart';
 
 import '../widgets/sidebar_menu.dart';
@@ -25,11 +27,23 @@ class HomePage extends StatelessWidget {
           children: [
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              padding: EdgeInsets.all(16),
+              padding: EdgeInsets.all(2),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   buildCard('החתונה', 'assets/images/WeddingPhotoBack6.jpg'),
+                  buildCard(
+                      'החתונה מגנטים', 'assets/images/WeddingPhotoBack13.jpg'),
+                  buildCard(
+                      'הצעת נישואין', 'assets/images/WeddingPhotoBack6.jpg'),
+                  buildCard('הפרשת חלה', 'assets/images/WeddingPhotoBack7.jpg'),
+                  buildCard('מסיבת רווקות מיטל',
+                      'assets/images/WeddingPhotoBack9.jpg'),
+                  buildCard('מרום רווקים אילת',
+                      'assets/images/WeddingPhotoBack11.jpg'),
+                  buildCard('מרום רווקים סיני',
+                      'assets/images/WeddingPhotoBack12.jpg'),
+                  buildCard('Last Seen', 'assets/images/no-image.png')
                 ],
               ),
             ),

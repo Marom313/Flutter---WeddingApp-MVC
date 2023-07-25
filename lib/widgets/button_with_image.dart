@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:wedding_final_mvc/ui/colors_constants.dart';
+import 'package:wedding_final_mvc/Constants/colors_constants.dart';
 
 Widget buildCard(String data, String path) => Container(
-      color: Colors.amber.shade200,
-      width: 150,
+      color: CcolorConstants.transparent,
+      width: 170,
       height: 75,
       child: SizedBox(
         child: Card(
@@ -18,7 +18,9 @@ Widget buildCard(String data, String path) => Container(
               child: Text(
                 data,
                 style: TextStyle(
-                  fontSize: 24,
+                  fontStyle: FontStyle.normal,
+                  backgroundColor: CcolorConstants.white,
+                  fontSize: 16,
                   fontWeight: FontWeight.bold,
                   color: CcolorConstants.primary_text_color,
                 ),
